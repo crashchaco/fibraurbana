@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width:99vw;
+    height:100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+height: 15%;
+background-color: #430101;
+display:flex;
+flex-direction: column;
+align-items: space-between;
+
+}
+
+#logo img {
+    margin-left: 50%;
+
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:white;
+}
+
+#contenedorPadre {
+    height: 150%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 4fr 1fr 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item1 item2"
+                        "item3 item3"
+                        "item4 item4"
+                        "item5 item5"
+}
+
+#footer {
+    height: 15%;
+    background-color: #000000;
+}
+
+
+
+/* ITEMS GRID */
+
+#item1 {
+    grid-area: item1;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#presentacion {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:25%;
+
+}
+
+#item2 {
+    grid-area: item2;
+    background-image: url("https://1.bp.blogspot.com/-pnIJQlZmG18/WC9NHxNESSI/AAAAAAAANqA/m1hBkwnnn-8x6KQ0TanHHFRdGW-xi_d9wCLcB/s1600/-MAMA%2BTXIWE%2BSENA%2BQXAXA-%2B%2528Nasayuwe%2529%2523streetart%2Bin%2BTorib%25C3%25ADo%252C%2BBogot%25C3%25A1%252C%2BColombia%252C%2Bby%2Bartist%2BGURI.jpg");
+    background-size: contain;
+    width: 100%;
+}
+#item3 {
+    grid-area: item3;
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#item4 {
+    grid-area: item4;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+#item5 {
+    grid-area: item5;
+    background-color: #430101;
+    width: 100%;
+    margin-bottom: 0.5%;
+}
