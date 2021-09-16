@@ -16,27 +16,30 @@ height: 15%;
 background-color: #430101;
 display:flex;
 flex-direction: column;
-align-items: space-between;
+justify-content: space-between;
 
+}
+
+.navbar{
+    background-color: #430101 !important;
 }
 
 #logo img {
     margin-left: 50%;
-
 }
 
-a {
-    outline: none;
-    text-decoration: none;
-    color: white;
-}
-
-#menu {
+.subMenu {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    color:white;
+    justify-content: space-around !important;
+}
+
+a{
+    margin: 0 4rem 0 2rem;
+}
+
+.subMenuLink{
+
+    font-size: 21px;
 }
 
 #contenedorPadre {
@@ -118,7 +121,6 @@ a {
     color: white;
 }
 
-}
 #accordionFlushExample {
     width: 30%;
 
@@ -146,12 +148,18 @@ a {
     --position: 1;
     pointer-events: none;
   }
-
+.carousel-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 10px 30px 30px;
+}
   .item {
     position: absolute;
-    width: 300px;
+    width: 600px;
     height: 400px;
-    background-color: coral;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #ffffff;
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
@@ -159,26 +167,34 @@ a {
       translateX(calc(-300px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
   }
-  
+  h5 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 30px;
+  }
+
+  .carousel-texto{
+      margin-left: 10px;
+      font-size: 20px;
+  }
+  .item img{
+      width: 100%;
+      height: 100%;
+  }
   .item:nth-of-type(1) {
     --offset: 1;
-    background-color: #90f1ef;
   }
   .item:nth-of-type(2) {
     --offset: 2;
-    background-color: #ff70a6;
   }
   .item:nth-of-type(3) {
     --offset: 3;
-    background-color: #ff9770;
   }
   .item:nth-of-type(4) {
     --offset: 4;
-    background-color: #ffd670;
   }
   .item:nth-of-type(5) {
     --offset: 5;
-    background-color: #e9ff70;
   }
   
   input:nth-of-type(1) {
@@ -219,4 +235,10 @@ a {
   }
   input:nth-of-type(5):checked ~ #carousel {
     --position: 5;
+  }
+
+  @media screen and (max-width: 1300px){
+      a{
+          margin: 0 1rem 0 1rem;
+      }
   }
