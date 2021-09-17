@@ -24,6 +24,8 @@ justify-content: space-between;
     background-color: #430101 !important;
 }
 
+
+
 #logo img {
     margin-left: 50%;
 }
@@ -34,12 +36,12 @@ justify-content: space-between;
 }
 
 a{
-    margin: 0 4rem 0 2rem;
+    margin: 0 6rem 0 2rem;
+    
 }
 
 .subMenuLink{
-
-    font-size: 21px;
+    font-size: 16px;
 }
 
 #contenedorPadre {
@@ -95,6 +97,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 25px;
 }
 #item4 {
     grid-area: item4;
@@ -237,8 +240,17 @@ a{
     --position: 5;
   }
 
+
+
+.navbar-nav {
+  justify-content: space-between !important;
+}
+
+
   @media screen and (max-width: 1300px){
       a{
           margin: 0 1rem 0 1rem;
       }
   }
+
+
