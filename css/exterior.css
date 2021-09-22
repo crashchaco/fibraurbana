@@ -46,19 +46,20 @@ a {
 
 #contenedorPadre {
   width: 100%;
-  height: 166%;
+  height:180%;
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-rows: 4fr 1fr 1fr 4fr 1fr;
+  grid-template-rows: 4fr 1fr 2fr 2fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "item1 item2"
     "item3 item3"
     "item4 item4"
     "item5 item5"
-    "item6 item6"
+
 }
 
 #footer {
+  margin-top:10.5%;
   height: 15%;
   background-color: #000000;
 }
@@ -103,35 +104,19 @@ a {
 
 #item3 {
   grid-area: item3;
-  background-color: #000000;
+  background-color: rgba(61, 61, 61, 0.1);
   width: 100%;
-  color: white;
+  height: 100%;
+  color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 25px;
 }
 
-#item3 a {
-  outline: none;
-  text-decoration: none;
-  color: white;
-}
-
 #item4 {
   grid-area: item4;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
-
-#item5 {
-  grid-area: item5;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(61, 61, 61, 0.1);
   width: 100%;
   height: 600px;
   margin: 0;
@@ -142,17 +127,100 @@ a {
   justify-items: center;
 }
 
-#item6 {
-  grid-area: item6;
+#item5 {
+  grid-area: item5;
+  color: black;
+  background-color: white;
+  width: 100%;
+  height: 140%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "tituloItem5 tituloItem5 tituloItem5 tituloItem5"
+                        "fotoUno fotoDos fotoTres fotoCuatro"
+                        "fotoCinco fotoSeis fotoSiete fotoOcho";
+
+  grid-column-gap: 1%;
+  grid-row-gap: 2%;
+}
+
+#tituloItem5 {
+  grid-area: tituloItem5;
   background-color: #430101;
   width: 100%;
-  margin-bottom: 0.5%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#fotoUno {
+  grid-area: fotoUno;
+  background-color: pink;
+  background-image: url("/img/foto1.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoDos {
+  grid-area: fotoDos;
+  background-color: green;
+  background-image: url("/img/foto2.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoTres {
+  grid-area: fotoTres;
+  background-color: lightcoral;
+  background-image: url("/img/foto3.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoCuatro {
+  grid-area: fotoCuatro;
+  background-color: purple;
+  background-image: url("/img/foto4.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoCinco {
+  grid-area: fotoCinco;
+  background-color: greenyellow;
+  background-image: url("/img/foto5.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoSeis {
+  grid-area: fotoSeis;
+  background-color: orange;
+  background-image: url("/img/foto6.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoSiete {
+  grid-area: fotoSiete;
+  background-color: blue;
+  background-image: url("/img/foto7.png");
+  background-size: contain;
+  width: 100%;
+}
+
+#fotoOcho {
+  grid-area: fotoOcho;
+  background-color: red;
+  background-image: url("/img/foto8.png");
+  background-size: contain;
+  width: 100%;
 }
 
 .accordion-button {
   background-color: #430101;
   color: white;
-  width: 30%;
+  width: 100%;
 }
 
 .accordion-button:focus {
