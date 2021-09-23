@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/css/presupuesto.css">
+    <title>Fibra Urbana - Presupuesto</title>
+</head>
+<body>
+<header id="header">
+    <div id=logo>
+        <img src="../img/logo.jpg" alt="logoFibra">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse subMenu" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link subMenuLink" aria-current="page" href="../index.html">HOME</a>
+                    <a class="nav-link subMenuLink" href="interiores.html">INTERIORES</a>
+                    <a class="nav-link subMenuLink" href="#">EXTERIORES</a>
+                    <a class="nav-link subMenuLink" href="cuadros.html">CUADROS</a>
+                    <a class="nav-link subMenuLink" href="presupuesto.html">PRESUPUESTAR</a>
+                    <a class="nav-link subMenuLink" href="#">NOSOTROS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="contenedor-formulario">
+    <h2>PRESUPUESTA TU TRABAJO</h2>
+    <div class="tipologia">
+        <p>Tipología:</p>
+        <button class="boton-contacto"> Exterior</button>
+        <button class="boton-contacto"> Interior</button>
+    </div>
+    <div class="tamanio">
+        <p>Tamaño:</p>
+        <label >
+            <input class="input-tamanio" placeholder=" Metros">
+        </label >
+        <p> X </p>
+        <label >
+            <input class="input-tamanio" placeholder=" Metros">
+        </label>
+        <label >
+            <input class="input-tamanio">
+        </label>
+    </div>
+    <div class="complejidad">
+        <p>Complejidad:</p>
+        <button class="boton-contacto">Baja</button>
+        <button class="boton-contacto">Media</button>
+        <button class="boton-contacto">Alta</button>
+    </div>
+    <h3 > DATOS DE CONTACTO: </h3>
+    <form class="formulario">
+        <div class="formulario-1">
+            <label class="form-label">Nombre y Apellido</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text icono"><i class="fas fa-users"></i></span>
+                <input type="text" class="form-control inputFormulario " placeholder="Juan Perez"
+                       required>
+            </div>
+            <label class="form-label">Mail</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text icono"><i class="fas fa-envelope"></i></span>
+                <input type="text" class="form-control inputFormulario " placeholder="example@gmail.com"
+                       required>
+            </div>
+        </div>
+        <div class="formulario-1">
+            <label class="form-label">Número</label>
+            <div class="input-group mb-3">
+                <span class="input-group-text icono"><i class="fab fa-whatsapp"></i></span>
+                <input type="text" class="form-control inputFormulario " placeholder="+54 9 114422-3311"
+                       required>
+            </div>
+
+            <div class="">
+                <label class="form-label">Ubicación</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text icono"><i class="fas fa-map-marker-alt"></i></span>
+                    <input type="text" class="form-control inputFormulario " placeholder="Buenos Aires, Capital"
+                           required>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="comentarios">
+        <label class="titulo-comentarios">Comentarios: </label>
+        <textarea class="form-control" id="comentarios" rows="3"
+                  placeholder="Contanos tu idea"></textarea>
+        <button class="btn-mail"> MANDAR MAIL</button>
+    </div>
+</div>
+</body>
+</html>
