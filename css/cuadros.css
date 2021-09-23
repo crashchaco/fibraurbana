@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width:100vw;
+    height:100vh;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+#header {
+    height: 15%;
+    background-color: #430101;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.navbar{
+    background-color: #430101 !important;
+}
+
+#logo img {
+    margin-left: 50%;
+}
+
+.subMenu {
+    display: flex;
+    justify-content: space-around !important;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formulario-1{
+    width: 30%;
+    margin: 0 30px 30px 30px ;
+}
+
+.comentarios{
+    margin: auto;
+    width: 64%;
+}
+
+h3{
+    width: 53%;
+    margin-bottom: 25px;
+}
+
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #000000 !important;
+
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 0;
+    border-bottom: 1px solid black;
+}
+
+.titulo-comentarios{
+    margin: 10px;
+}
+
+#comentarios{
+    border: 1px solid black;
+    resize: none;
+    border-radius: 10px;
+}
+
+a{
+    margin: 0 4rem 0 2rem;
+}
+
+.subMenuLink{
+    font-size: 21px;
+}
+
+#contenedorPadre {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "item1 item2"
+
+}
+
+#footer {
+    height: 15%;
+    background-color: #000000;
+}
+
+/* ITEMS GRID */
+
+#item1 {
+    grid-area: item1;
+    background-color: rgb(255, 255, 255);
+    margin: 5rem;
+}
+
+#presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 28px;
+}
+
+.titulo1{
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
+.texto2{
+    line-height: 34px;
+    font-size: 35px;
+}
+.btn-presupuestar{
+    font-size: 15px;
+    text-align: center;
+    background: #430101;
+    color: white;
+    border: none;
+    padding: 20px 52px;
+    line-height: 18px;
+    letter-spacing: 0.25em;
+    margin-top: 2.5rem;
+}
+
+.inputFormulario{
+    border: none;
+    border-bottom: 1px solid;
+}
+
+.btn-mail{
+    font-size: 15px;
+    text-align: center;
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 20px 52px;
+    line-height: 18px;
+    letter-spacing: 0.25em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#item2 {
+    grid-area: item2;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-right: 2rem;
+}
+
+.imagenCuadros{
+    width: 100%;
+}
+#item3 {
+
+    background-color: #3D3D3D1A;
+    width: 100%;
+    color: black;
+
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+.titulo3{
+    font-size: 40px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 15px;
+
+}
+
+.centrar{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@media screen and (max-width: 1300px){
+    a{
+        margin: 0 1rem 0 1rem;
+    }
+}
