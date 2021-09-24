@@ -55,9 +55,37 @@ a{
 }
 
 #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 15%;
     background-color: #000000;
-}
+  }
+  
+  #redes {
+    margin-right: 10%;
+  }
+  
+  #redes span{
+    margin: 10px;
+  }
+  #redes p{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: white;
+  }
+  
+  #contactoFooter {
+    margin-left: 1%;
+    color: white;
+  }
+  
+  #contactoFooter a{
+    margin-left: 0.5%;
+    outline: none;
+    text-decoration: none;
+    color: white;
+  }
 
 /* ITEMS GRID */
 
@@ -255,6 +283,8 @@ input:nth-of-type(5) {
 input:nth-of-type(5):checked ~ #carousel {
     --position: 5;
 }
+
+
 
 @media screen and (max-width: 1300px){
     a{

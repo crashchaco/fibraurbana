@@ -36,12 +36,12 @@ body {
 }
 
 a {
-  margin: 0 6rem 0 2rem;
+  margin: 0 4rem 0 2rem;
 
 }
 
 .subMenuLink {
-  font-size: 16px;
+  font-size: 21px;
 }
 
 #contenedorPadre {
@@ -71,28 +71,39 @@ a {
 #item1 {
   grid-area: item1;
   background-color: rgb(255, 255, 255);
-  width: 100%;
+  margin: 5rem;
 }
 
 #presentacion {
-  width: 35%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 25%;
+  align-items: flex-start;
+  font-size: 28px;
 }
 
 
 #presentacion h2 {
-  margin-bottom: 20px;
+  font-size: 60px;
+  margin-bottom: 2rem;
+  
 }
 
 
 #presentacion p {
-  margin-top: -55px;
-  font-weight: bold;
+  line-height: 34px;
+  font-size: 35px;
+}
+
+.btn-cotizar{
+  font-size: 15px;
+  text-align: center;
+  background: #430101;
+  color: white;
+  border: none;
+  padding: 20px 52px;
+  line-height: 18px;
+  letter-spacing: 0.25em;
+  margin-top: 2.5rem;
 }
 
 #item2 {
@@ -156,7 +167,7 @@ a {
 #fotoUno {
   grid-area: fotoUno;
   background-color: pink;
-  background-image: url("/img/foto1.png");
+  background-image: url("../img/foto1.png");
   background-size: contain;
   width: 100%;
 }
@@ -164,7 +175,7 @@ a {
 #fotoDos {
   grid-area: fotoDos;
   background-color: green;
-  background-image: url("/img/foto2.png");
+  background-image: url("../img/foto2.png");
   background-size: contain;
   width: 100%;
 }
@@ -172,7 +183,7 @@ a {
 #fotoTres {
   grid-area: fotoTres;
   background-color: lightcoral;
-  background-image: url("/img/foto3.png");
+  background-image: url("../img/foto3.png");
   background-size: contain;
   width: 100%;
 }
@@ -180,7 +191,7 @@ a {
 #fotoCuatro {
   grid-area: fotoCuatro;
   background-color: purple;
-  background-image: url("/img/foto4.png");
+  background-image: url("../img/foto4.png");
   background-size: contain;
   width: 100%;
 }
@@ -188,7 +199,7 @@ a {
 #fotoCinco {
   grid-area: fotoCinco;
   background-color: greenyellow;
-  background-image: url("/img/foto5.png");
+  background-image: url("../img/foto5.png");
   background-size: contain;
   width: 100%;
 }
@@ -196,7 +207,7 @@ a {
 #fotoSeis {
   grid-area: fotoSeis;
   background-color: orange;
-  background-image: url("/img/foto6.png");
+  background-image: url("../img/foto6.png");
   background-size: contain;
   width: 100%;
 }
@@ -204,7 +215,7 @@ a {
 #fotoSiete {
   grid-area: fotoSiete;
   background-color: blue;
-  background-image: url("/img/foto7.png");
+  background-image: url("../img/foto7.png");
   background-size: contain;
   width: 100%;
 }
@@ -212,7 +223,7 @@ a {
 #fotoOcho {
   grid-area: fotoOcho;
   background-color: red;
-  background-image: url("/img/foto8.png");
+  background-image: url("../img/foto8.png");
   background-size: contain;
   width: 100%;
 }
