@@ -27,7 +27,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse subMenu" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav w-100 justify-content-around">
                     <a class="nav-link subMenuLink" aria-current="page" href="../index.html">HOME</a>
                     <a class="nav-link subMenuLink" href="interiores.html">INTERIORES</a>
                     <a class="nav-link subMenuLink" href="exterior.html">EXTERIORES</a>
@@ -69,51 +69,98 @@
         </div>
     </div>
 
-     <!-- CARROUSEL -->
-    <div class="contenedor-formulario">
-        <h3 style="text-align: center"> DATOS DE CONTACTO: </h3>
-        <form class="formulario">
-            <div class="formulario-1">
-                <label class="form-label">Nombre y Apellido</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text icono"><i class="fas fa-users"></i></span>
-                    <input type="text" class="form-control inputFormulario " placeholder="Juan Perez"
-                           required>
-                </div>
-                <label class="form-label">Mail</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text icono"><i class="fas fa-envelope"></i></span>
-                    <input type="text" class="form-control inputFormulario " placeholder="example@gmail.com"
-                           required>
-                </div>
-            </div>
-            <div class="formulario-1">
-                <label class="form-label">Número</label>
-                <div class="input-group mb-3">
-                    <span class="input-group-text icono"><i class="fab fa-whatsapp"></i></span>
-                    <input type="text" class="form-control inputFormulario " placeholder="+54 9 114422-3311"
-                           required>
-                </div>
+    <!-- CARROUSEL -->
 
-                <div class="">
-                    <label class="form-label">Ubicación</label>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text icono"><i class="fas fa-map-marker-alt"></i></span>
-                        <input type="text" class="form-control inputFormulario " placeholder="Buenos Aires, Capital"
-                               required>
-                    </div>
+    <div id="carouselExampleCaptions" class="carousel slide m-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/foto3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
-        </form>
-        <div class="comentarios">
-            <label class="titulo-comentarios">Comentarios: </label>
-            <textarea class="form-control" id="comentarios" rows="3"
-                      placeholder="Contanos tu idea"></textarea>
-            <button class="btn-mail"> MANDAR MAIL</button>
+            <div class="carousel-item">
+                <img src="../img/foto1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../img/foto6.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
+    <!--    <div class="contenedor-formulario">-->
+    <!--        <h3 style="text-align: center"> DATOS DE CONTACTO: </h3>-->
+    <!--        <form class="formulario">-->
+    <!--            <div class="formulario-1">-->
+    <!--                <label class="form-label">Nombre y Apellido</label>-->
+    <!--                <div class="input-group mb-3">-->
+    <!--                    <span class="input-group-text icono"><i class="fas fa-users"></i></span>-->
+    <!--                    <input type="text" class="form-control inputFormulario " placeholder="Juan Perez"-->
+    <!--                           required>-->
+    <!--                </div>-->
+    <!--                <label class="form-label">Mail</label>-->
+    <!--                <div class="input-group mb-3">-->
+    <!--                    <span class="input-group-text icono"><i class="fas fa-envelope"></i></span>-->
+    <!--                    <input type="text" class="form-control inputFormulario " placeholder="example@gmail.com"-->
+    <!--                           required>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="formulario-1">-->
+    <!--                <label class="form-label">Número</label>-->
+    <!--                <div class="input-group mb-3">-->
+    <!--                    <span class="input-group-text icono"><i class="fab fa-whatsapp"></i></span>-->
+    <!--                    <input type="text" class="form-control inputFormulario " placeholder="+54 9 114422-3311"-->
+    <!--                           required>-->
+    <!--                </div>-->
+
+    <!--                <div class="">-->
+    <!--                    <label class="form-label">Ubicación</label>-->
+    <!--                    <div class="input-group mb-3">-->
+    <!--                        <span class="input-group-text icono"><i class="fas fa-map-marker-alt"></i></span>-->
+    <!--                        <input type="text" class="form-control inputFormulario " placeholder="Buenos Aires, Capital"-->
+    <!--                               required>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </form>-->
+    <!--        <div class="comentarios">-->
+    <!--            <label class="titulo-comentarios">Comentarios: </label>-->
+    <!--            <textarea class="form-control" id="comentarios" rows="3"-->
+    <!--                      placeholder="Contanos tu idea"></textarea>-->
+    <!--            <button class="btn-mail"> MANDAR MAIL</button>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
 </main>
+
+
 
 <footer id="footer">
     <div id="contactoFooter">
@@ -132,9 +179,12 @@
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
