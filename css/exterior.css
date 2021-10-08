@@ -5,8 +5,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
@@ -24,8 +24,6 @@ body {
   background-color: #430101 !important;
 }
 
-
-
 #logo img {
   margin-left: 50%;
 }
@@ -35,26 +33,21 @@ body {
   justify-content: space-around !important;
 }
 
-a {
-  margin: 0 4rem 0 2rem;
-
-}
-
 .subMenuLink {
   font-size: 21px;
 }
 
 #contenedorPadre {
   width: 100%;
-  height:180%;
+  height:100%;
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-template-rows: 4fr 1fr 2fr 2fr;
+  grid-template-rows: 1fr 200px 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "item1 item2"
-    "item3 item3"
-    "item4 item4"
-    "item5 item5"
+                        "item3 item3"
+                        "item4 item4"
+                        "item5 item5"
 
 }
 
@@ -62,6 +55,34 @@ a {
   margin-top:10.5%;
   height: 15%;
   background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#redes {
+  margin-right: 10%;
+}
+
+#redes span{
+  margin: 10px;
+}
+#redes p{
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+#contactoFooter {
+  margin-left: 1%;
+  color: white;
+}
+
+#contactoFooter a{
+  margin-left: 0.5%;
+  outline: none;
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -71,7 +92,7 @@ a {
 #item1 {
   grid-area: item1;
   background-color: rgb(255, 255, 255);
-  margin: 5rem;
+  margin: 5rem 5rem 5rem 5rem;
 }
 
 #presentacion {
@@ -87,7 +108,6 @@ a {
   margin-bottom: 2rem;
   
 }
-
 
 #presentacion p {
   line-height: 34px;
@@ -108,31 +128,33 @@ a {
 
 #item2 {
   grid-area: item2;
-  background-image: url("https://1.bp.blogspot.com/-pnIJQlZmG18/WC9NHxNESSI/AAAAAAAANqA/m1hBkwnnn-8x6KQ0TanHHFRdGW-xi_d9wCLcB/s1600/-MAMA%2BTXIWE%2BSENA%2BQXAXA-%2B%2528Nasayuwe%2529%2523streetart%2Bin%2BTorib%25C3%25ADo%252C%2BBogot%25C3%25A1%252C%2BColombia%252C%2Bby%2Bartist%2BGURI.jpg");
-  background-size: contain;
   width: 100%;
+}
+
+.img-item2 {
+  width: 100%;
+  height: 100%;
 }
 
 #item3 {
   grid-area: item3;
-  background-color: rgba(61, 61, 61, 0.1);
+  background-color: #3D3D3D1A;
   width: 100%;
-  height: 100%;
   color: black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 25px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 #item4 {
   grid-area: item4;
-  background-color: rgba(61, 61, 61, 0.1);
+  background-color: #3D3D3D1A;
   width: 100%;
-  height: 600px;
   margin: 0;
   display: grid;
-  grid-template-rows: 500px 100px;
+  grid-template-rows: 800px 100px;
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   align-items: center;
   justify-items: center;
@@ -292,36 +314,7 @@ a {
   padding: 5px;
 }
 
-#footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-#redes {
-  margin-right: 10%;
-}
-
-#redes span{
-  margin: 10px;
-}
-#redes p{
-  margin-top: 10px;
-  margin-left: 10px;
-  color: white;
-}
-
-#contactoFooter {
-  margin-left: 1%;
-  color: white;
-}
-
-#contactoFooter a{
-  margin-left: 0.5%;
-  outline: none;
-  text-decoration: none;
-  color: white;
-}
 
 /* CAROUSEL TRABAJOS DESTACADOS */
 
@@ -329,7 +322,7 @@ a {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
   width: 100%;
-  height: 500px;
+  height: 876px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,16 +337,17 @@ a {
 
 .carousel-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px 10px 30px 30px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .item {
   position: absolute;
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 876px;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ffffff;
   --r: calc(var(--position) - var(--offset));
   --abs: max(calc(var(--r) * -1), var(--r));
@@ -374,8 +368,8 @@ h5 {
 }
 
 .item img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
 }
 
 .item:nth-of-type(1) {
@@ -403,7 +397,7 @@ input:nth-of-type(1) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(1):checked~#carousel {
+input:nth-of-type(1):checked ~ #carousel {
   --position: 1;
 }
 
@@ -412,7 +406,7 @@ input:nth-of-type(2) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(2):checked~#carousel {
+input:nth-of-type(2):checked ~ #carousel {
   --position: 2;
 }
 
@@ -421,7 +415,7 @@ input:nth-of-type(3) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(3):checked~#carousel {
+input:nth-of-type(3):checked ~ #carousel {
   --position: 3;
 }
 
@@ -430,7 +424,7 @@ input:nth-of-type(4) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(4):checked~#carousel {
+input:nth-of-type(4):checked ~ #carousel {
   --position: 4;
 }
 
@@ -439,19 +433,240 @@ input:nth-of-type(5) {
   grid-row: 2 / 3;
 }
 
-input:nth-of-type(5):checked~#carousel {
+input:nth-of-type(5):checked ~ #carousel {
   --position: 5;
 }
 
 
+@media screen and (max-width: 1300px){
 
-.navbar-nav {
-  justify-content: space-between !important;
+  #contenedorPadre {
+    width: 100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: auto 1fr 200px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:  "item1 item1" 
+                          "item2 item2"
+                          "item3 item3"
+                          "item4 item4"
+                          "item5 item5"
+  
+  }
+
+  #item5 {
+    grid-area: item5;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tituloItem5 tituloItem5"
+                          "fotoUno fotoDos"
+                          "fotoTres fotoCuatro"
+                          "fotoCinco fotoSeis"
+                          "fotoSiete fotoOcho";
+  
+    grid-column-gap: 0.5%;
+    grid-row-gap: 1%;
+  }
+
+  .texto2 {
+    line-height: 34px;
+    font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 950px){
+
+  #contenedorPadre {
+    width: 100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: auto 1fr 200px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:  "item1" 
+                          "item2"
+                          "item3"
+                          "item4"
+                          "item5"
+  
+  }
+
+  #item5 {
+    grid-area: item5;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tituloItem5 tituloItem5"
+                          "fotoUno fotoDos"
+                          "fotoTres fotoCuatro"
+                          "fotoCinco fotoSeis"
+                          "fotoSiete fotoOcho";
+  
+    grid-column-gap: 0.5%;
+    grid-row-gap: 0.5%;
+  }
+  
+
+  .item{
+    width: 86%;
+    height: 100%;
+}
+#carousel{
+    width: 80%;
+    height: 80%;
+}
+.titulo1{
+  font-size: 49px;
+}
+
+.texto2 {
+  line-height: 34px;
+  font-size: 25px;
+}
+
+}
+
+@media screen and (max-width: 730px){
+
+  #contenedorPadre {
+    width: 100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: auto 1fr 200px 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:  "item1" 
+                          "item2"
+                          "item3"
+                          "item4"
+                          "item5"
+  
+  }
+
+  #item5 {
+    grid-area: item5;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tituloItem5 tituloItem5"
+                          "fotoUno fotoDos"
+                          "fotoTres fotoCuatro"
+                          "fotoCinco fotoSeis"
+                          "fotoSiete fotoOcho";
+  
+    grid-column-gap: 0.5%;
+    grid-row-gap: 0.5%;
+  }
+  
+
+  .item{
+    width: 86%;
+    height: 100%;
+}
+#carousel{
+    width: 80%;
+    height: 80%;
+}
+
+.titulo1{
+  font-size: 49px;
+}
+
+.texto2 {
+  line-height: 34px;
+  font-size: 25px;
+}
+  
+}
+
+@media screen and (max-width: 500px){
+
+  #header {
+    width: 100%;
+    height: 15%;
+    background-color: #430101;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+  }
+
+
+  #contenedorPadre {
+    width: 100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: auto 1fr 200px 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:  "item1" 
+                          "item2"
+                          "item3"
+                          "item4"
+                          "item5"
+  
+  }
+
+  #item5 {
+    grid-area: item5;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "tituloItem5 tituloItem5"
+                          "fotoUno fotoDos"
+                          "fotoTres fotoCuatro"
+                          "fotoCinco fotoSeis"
+                          "fotoSiete fotoOcho";
+  
+    grid-column-gap: 0.5%;
+    grid-row-gap: 0.5%;
+  }
+  
+
+  .item{
+    width: 86%;
+    height: 100%;
+}
+#carousel{
+    width: 80%;
+    height: 80%;
 }
 
 
-@media screen and (max-width: 1300px) {
-  a {
-    margin: 0 1rem 0 1rem;
-  }
+.titulo1{
+  font-size: 49px;
+}
+
+#footer {
+
+
+  width: 100%;
+  margin-top:10.5%;
+  height: 15%;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 }

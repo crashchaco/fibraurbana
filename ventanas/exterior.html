@@ -31,7 +31,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse subMenu" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav w-100 justify-content-around">
                         <a class="nav-link subMenuLink" aria-current="page" href="../index.html">HOME</a>
                         <a class="nav-link subMenuLink" href="interiores.html">INTERIORES</a>
                         <a class="nav-link subMenuLink" href="exterior.html">EXTERIORES</a>
@@ -51,21 +51,21 @@
         <div id="item1">
             <div id="presentacion">
 
-                <h2> FIBRA URBANA</h2>
+                <h2 class="titulo1"> FIBRA URBANA</h2>
 
-                <p> Somos un equipo de artistas residentes en la Ciudad de Córdoba que nos unimos para crear Fibra
+                <p class="texto2">Somos un equipo de artistas residentes en la Ciudad de Córdoba que nos unimos para crear Fibra
                     Urbana.</p>
 
-                <p> Nos especializamos en la realización de pintura de caballete y en la pintura mural de medio y gran
+                <p class="texto2"> Nos especializamos en la realización de pintura de caballete y en la pintura mural de medio y gran
                     formato. </p>
-                    <button class="btn-cotizar">
-                        COTIZA TU TRABAJO
-                    </button>
+                <button class="btn-cotizar">
+                    COTIZA TU TRABAJO
+                </button>
             </div>
         </div>
 
         <div id="item2">
-            2
+            <img class="img-item2" src="../img/1.png" />
         </div>
 
         <div id="item3">
@@ -74,28 +74,17 @@
 
         <div id="item4">
 
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
             <input type="radio" name="position" checked />
             <input type="radio" name="position" />
             <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
+
             <div id="carousel">
                 <div class="item">
                     <h5>Pared</h5>
                     <div class="carousel-container">
-                        <img src="../img/1.png">
-                        <p class="carousel-texto"> Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.</p>
-                    </div>
-
-                </div>
-                <div class="item">
-                    <h5>Pared</h5>
-                    <div class="carousel-container">
-                        <img src="../img/1.png">
+                        <img src="../img/1.png " id="myImg" alt="imagen">
                         <p class="carousel-texto"> Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
                             raptus tus estBarcas
                             raptus tus est.Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
@@ -103,42 +92,24 @@
                             raptus tus est.</p>
                     </div>
                 </div>
-                <div class="item">
-                    <h5>Pared</h5>
-                    <div class="carousel-container">
-                        <img src="../img/1.png">
-                        <p class="carousel-texto"> Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <h5>Pared</h5>
-                    <div class="carousel-container">
-                        <img src="../img/1.png">
-                        <p class="carousel-texto"> Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <h5>Pared</h5>
-                    <div class="carousel-container">
-                        <img src="../img/1.png">
-                        <p class="carousel-texto"> Barcas raptus tus estBarcas raptus tus estBarcas raptus tus estBarcas
-                            raptus tus estBarcas
-                            raptus tus est.</p>
-                    </div>
-                </div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <!--div para el fondo de pantalla-->
+            <div id='background'></div>
+            <!--div para visualizar la imagen grande con el boton cerrar-->
+            <div id='preview'>
+                <div id='close'></div>
+                <div id='content'></div>
             </div>
         </div>
 
         <div id="item5">
-            <div id="tituloItem5"><h1>OTROS TRABAJOS</h1></div>
+            <div id="tituloItem5">
+                <h1>OTROS TRABAJOS</h1>
+            </div>
             <div id="fotoUno">1</div>
             <div id="fotoDos">2</div>
             <div id="fotoTres">3</div>
