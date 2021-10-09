@@ -375,14 +375,9 @@ input:nth-of-type(5):checked ~ #carousel {
 
 @media screen and (max-width: 1375px){
 
+
   #header {
     width: 100%;
-    height: 15%;
-    background-color: #430101;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
   }
 
   #contenedorPadre {
@@ -390,7 +385,7 @@ input:nth-of-type(5):checked ~ #carousel {
     height: 100%;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: auto 1fr 200px 1fr 1fr;
+    grid-template-rows: auto 1fr 200px 100px 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas:"item1"
                         "item2"
@@ -400,6 +395,17 @@ input:nth-of-type(5):checked ~ #carousel {
                         "item6"
   }
 
+  #item5 {
+    grid-area: item5;
+    background-color: #3D3D3D1A;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 800px 50px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
   .item{
     width: 86%;
@@ -407,7 +413,7 @@ input:nth-of-type(5):checked ~ #carousel {
 }
 #carousel{
     width: 80%;
-    height: 80%;
+    height: 100%;
 }
 
 .titulo1{
@@ -418,6 +424,10 @@ input:nth-of-type(5):checked ~ #carousel {
 .texto2 {
   line-height: 34px;
   font-size: 25px;
+}
+
+#redes {
+  margin-top: 1%;
 }
 
 
@@ -428,12 +438,6 @@ input:nth-of-type(5):checked ~ #carousel {
 
   #header {
     width: 100%;
-    height: 15%;
-    background-color: #430101;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
   }
 
   #contenedorPadre {
@@ -441,7 +445,7 @@ input:nth-of-type(5):checked ~ #carousel {
     height: 100%;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: auto 1fr 200px 1fr 1fr;
+    grid-template-rows: auto 1fr 200px 100px 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas:"item1"
                         "item2"
@@ -451,6 +455,17 @@ input:nth-of-type(5):checked ~ #carousel {
                         "item6"
   }
 
+  #item5 {
+    grid-area: item5;
+    background-color: #3D3D3D1A;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 800px 50px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
   .item{
     width: 86%;
@@ -458,7 +473,7 @@ input:nth-of-type(5):checked ~ #carousel {
 }
 #carousel{
     width: 80%;
-    height: 80%;
+    height: 100%;
 }
 
 .titulo1{
@@ -469,6 +484,10 @@ input:nth-of-type(5):checked ~ #carousel {
 .texto2 {
   line-height: 34px;
   font-size: 25px;
+}
+
+#redes {
+  margin-top: 1%;
 }
 
 
@@ -476,15 +495,8 @@ input:nth-of-type(5):checked ~ #carousel {
 
 @media screen and (max-width: 730px){
 
-
   #header {
     width: 100%;
-    height: 15%;
-    background-color: #430101;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
   }
 
   #contenedorPadre {
@@ -492,7 +504,7 @@ input:nth-of-type(5):checked ~ #carousel {
     height: 100%;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: auto 1fr 200px 1fr 1fr;
+    grid-template-rows: auto 1fr 200px 100px 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas:"item1"
                         "item2"
@@ -502,6 +514,17 @@ input:nth-of-type(5):checked ~ #carousel {
                         "item6"
   }
 
+  #item5 {
+    grid-area: item5;
+    background-color: #3D3D3D1A;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 800px 50px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
   .item{
     width: 86%;
@@ -509,7 +532,7 @@ input:nth-of-type(5):checked ~ #carousel {
 }
 #carousel{
     width: 80%;
-    height: 80%;
+    height: 100%;
 }
 
 .titulo1{
@@ -522,29 +545,21 @@ input:nth-of-type(5):checked ~ #carousel {
   font-size: 25px;
 }
 
-
+#redes {
+  margin-top: 1%;
+}
 
 }
 
 @media screen and (max-width: 500px){
 
 
-  #header {
-    width: 100%;
-    height: 15%;
-    background-color: #430101;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  
-  }
-
   #contenedorPadre {
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: auto 1fr 200px 1fr 1fr;
+    grid-template-rows: auto 1fr 200px 100px 1fr auto;
     grid-template-columns: 1fr;
     grid-template-areas:"item1"
                         "item2"
@@ -554,6 +569,35 @@ input:nth-of-type(5):checked ~ #carousel {
                         "item6"
   }
 
+  #item1 {
+    margin: 1em;
+  }
+  
+  #presentacion {
+    font-size: 28px;
+  }
+  
+    #item3 {
+  width: 100%;
+  font-size: 20px;
+  }
+
+  #item4 {
+    width: 100%;
+    font-size: 20px;
+    }
+
+  #item5 {
+    grid-area: item5;
+    background-color: #3D3D3D1A;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 800px 50px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
 
   .item{
     width: 86%;
@@ -561,18 +605,22 @@ input:nth-of-type(5):checked ~ #carousel {
 }
 #carousel{
     width: 80%;
-    height: 80%;
+    height: 70%;
 }
 
 .titulo1{
   font-size: 49px;
 }
 
-
 .texto2 {
   line-height: 34px;
   font-size: 25px;
 }
+
+#redes {
+  margin-top: 2%;
+}
+
 
 
     
