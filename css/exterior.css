@@ -154,10 +154,11 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:  "fotoUno fotoDos fotoTres fotoCuatro"
-                        "fotoCinco fotoSeis fotoSiete fotoOcho";
+                        "fotoCinco fotoSeis fotoSiete fotoOcho"
+                        "fotoNueve fotoDiez fotoOnce fotoDoce";
   grid-column-gap: 1%;
   grid-row-gap: 2%;
 }
@@ -177,6 +178,7 @@ body {
   background-image: url("../img/foto1.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 #fotoDos {
@@ -185,6 +187,7 @@ body {
   background-image: url("../img/foto2.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 #fotoTres {
@@ -193,6 +196,7 @@ body {
   background-image: url("../img/foto3.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 #fotoCuatro {
@@ -209,6 +213,7 @@ body {
   background-image: url("../img/foto5.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 #fotoSeis {
@@ -217,6 +222,7 @@ body {
   background-image: url("../img/foto6.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 #fotoSiete {
@@ -225,6 +231,7 @@ body {
   background-image: url("../img/foto7.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
 }
 
 #fotoOcho {
@@ -233,6 +240,43 @@ body {
   background-image: url("../img/foto8.png");
   background-size: cover;
   width: 100%;
+  background-position: center;
+}
+
+#fotoNueve {
+  grid-area: fotoNueve;
+  background-color: red;
+  background-image: url("../img/foto9.png");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+
+#fotoDiez {
+  grid-area: fotoDiez;
+  background-color: red;
+  background-image: url("../img/foto10.png");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+
+#fotoOnce {
+  grid-area: fotoOnce;
+  background-color: red;
+  background-image: url("../img/foto11.png");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+
+#fotoDoce {
+  grid-area: fotoDoce;
+  background-color: red;
+  background-image: url("../img/foto12.png");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
 }
 
 
@@ -261,12 +305,14 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:  "fotoUno fotoDos"
                           "fotoTres fotoCuatro"
                           "fotoCinco fotoSeis"
-                          "fotoSiete fotoOcho";
+                          "fotoSiete fotoOcho"
+                          "fotoNueve fotoDiez"
+                          "fotoOnce fotoDoce";
   
     grid-column-gap: 0.5%;
     grid-row-gap: 1%;
@@ -306,13 +352,14 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:  "fotoUno fotoDos"
                           "fotoTres fotoCuatro"
                           "fotoCinco fotoSeis"
-                          "fotoSiete fotoOcho";
-  
+                          "fotoSiete fotoOcho"
+                          "fotoNueve fotoDiez"
+                          "fotoOnce fotoDoce";
     grid-column-gap: 0.5%;
     grid-row-gap: 1%;
   }
@@ -358,13 +405,14 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:  "fotoUno fotoDos"
                           "fotoTres fotoCuatro"
                           "fotoCinco fotoSeis"
-                          "fotoSiete fotoOcho";
-  
+                          "fotoSiete fotoOcho"
+                          "fotoNueve fotoDiez"
+                          "fotoOnce fotoDoce";
     grid-column-gap: 0.5%;
     grid-row-gap: 1%;
   }
@@ -403,7 +451,7 @@ body {
     height:100%;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: auto 1fr 200px 4fr;
+    grid-template-rows: auto 1fr 200px 8fr;
     grid-template-columns: 1fr;
     grid-template-areas:  "item1" 
                           "item2"
@@ -420,7 +468,7 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:  "fotoUno" 
                           "fotoDos"
@@ -429,7 +477,11 @@ body {
                           "fotoCinco"
                           "fotoSeis"
                           "fotoSiete"
-                          "fotoOcho";
+                          "fotoOcho"
+                          "fotoNueve"
+                          "fotoDiez"
+                          "fotoOnce"
+                          "fotoDoce";
   
     grid-column-gap: 0.5%;
     grid-row-gap: 1%;

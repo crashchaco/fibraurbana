@@ -57,6 +57,7 @@ body {
 
 #redes {
   margin-right: 10%;
+  margin-top: 1%;
 }
 
 #redes span{
@@ -148,7 +149,26 @@ margin-left:26%;
   grid-area: item3;
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3%;
 }
+
+#item3 img {
+width: 240px;
+height: 120px;
+}
+
+#item3 p{
+  line-height: 10px;
+  font-weight: bold;
+  }
+
+#nameRedes {
+  margin-left:25%;
+  font-size: 25px;
+}
+
 
 
 
@@ -159,7 +179,7 @@ margin-left:26%;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "item1"
+    grid-template-areas:  "item1"
                           "item2"
                           "item3"
   }
@@ -167,13 +187,14 @@ margin-left:26%;
   #nosotros1 {
     display: inline-block;
     margin-top:0;
-    margin-left:150px;
+    margin-left:30%;
+    margin-bottom: 2%;
     }
     
     #nosotros2 {
     display: inline-block;
     margin-top:0;
-    margin-left:150px;
+    margin-left:30%;
     }
 
     .titulo1{
@@ -205,13 +226,14 @@ margin-left:26%;
   #nosotros1 {
     display: inline-block;
     margin-top:0;
-    margin-left:150px;
+    margin-left:25%;
+    margin-bottom: 2%;
     }
     
     #nosotros2 {
     display: inline-block;
     margin-top:0;
-    margin-left:150px;
+    margin-left:25%;
     }
 
     .titulo1{
@@ -231,7 +253,7 @@ margin-left:26%;
   #contenedorPadre {
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows:     1fr;
     grid-template-columns: 1fr;
     grid-template-areas: "item1"
                           "item2"
@@ -239,15 +261,14 @@ margin-left:26%;
   }
 
   #nosotros1 {
-    display: inline-block;
     margin-top:0;
-    margin-left:150px;
+    margin-left:18%;
+    margin-bottom: 2%;
     }
     
     #nosotros2 {
-    display: inline-block;
     margin-top:0;
-    margin-left:150px;
+    margin-left:18%;
     }
 
     .titulo1{
@@ -263,7 +284,7 @@ margin-left:26%;
   
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
 
   #header {
     width: 100%;
@@ -286,15 +307,14 @@ margin-left:26%;
   }
 
   #nosotros1 {
-    display: inline-block;
     margin-top:0;
-    margin-left:10px;
+    margin-left:10%;
+    margin-bottom: 2%;
     }
     
     #nosotros2 {
-    display: inline-block;
     margin-top:0;
-    margin-left:10px;
+    margin-left:10%;
     }
 
     .titulo1{
@@ -315,6 +335,84 @@ margin-left:26%;
       height: 15%;
       background-color: #000000;
     }
-    
 
-}
+  }
+
+
+
+    @media screen and (max-width: 400px){
+
+      #header {
+        width: 100%;
+        height: 15%;
+        background-color: #430101;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+      }
+    
+      #contenedorPadre {
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "item1"
+                              "item2"
+                              "item3"
+      }
+    
+      #nosotros1 {
+        margin-top:0;
+        margin-left:1%;
+        margin-bottom: 2%;
+        }
+        
+        #nosotros2 {
+        margin-top:0;
+        margin-left:1%;
+        
+        }
+    
+        .titulo1{
+          font-size: 49px;
+        }
+        
+        
+        .texto2 {
+          line-height: 34px;
+          font-size: 25px;
+        }
+
+        #item1 {
+          grid-area: item1;
+          background-color: rgb(255, 255, 255);
+          margin: 1rem;
+        }
+        
+        #presentacion {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        #presentacion h2 {
+          font-size: 60px;
+          margin-bottom: 2rem;
+          
+        }
+        
+        #presentacion p {
+          line-height: 34px;
+          font-size: 25px;
+        }
+    
+        #footer {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 15%;
+          background-color: #000000;
+        }
+      }
