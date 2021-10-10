@@ -175,7 +175,7 @@ body {
 #fotoUno {
   grid-area: fotoUno;
   background-color: pink;
-  background-image: url("../img/foto1.png");
+  background-image: url("./img/foto1.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -184,7 +184,7 @@ body {
 #fotoDos {
   grid-area: fotoDos;
   background-color: green;
-  background-image: url("../img/foto2.png");
+  background-image: url("./img/foto2.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -193,7 +193,7 @@ body {
 #fotoTres {
   grid-area: fotoTres;
   background-color: lightcoral;
-  background-image: url("../img/foto3.png");
+  background-image: url("./img/foto3.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -210,7 +210,7 @@ body {
 #fotoCinco {
   grid-area: fotoCinco;
   background-color: greenyellow;
-  background-image: url("../img/foto5.png");
+  background-image: url("./img/foto5.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -219,7 +219,7 @@ body {
 #fotoSeis {
   grid-area: fotoSeis;
   background-color: orange;
-  background-image: url("../img/foto6.png");
+  background-image: url("./img/foto6.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -228,7 +228,7 @@ body {
 #fotoSiete {
   grid-area: fotoSiete;
   background-color: blue;
-  background-image: url("../img/foto7.png");
+  background-image: url("./img/foto7.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -237,7 +237,7 @@ body {
 #fotoOcho {
   grid-area: fotoOcho;
   background-color: red;
-  background-image: url("../img/foto8.png");
+  background-image: url("./img/foto8.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -246,7 +246,7 @@ body {
 #fotoNueve {
   grid-area: fotoNueve;
   background-color: red;
-  background-image: url("../img/foto9.png");
+  background-image: url("./img/foto9.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -255,7 +255,7 @@ body {
 #fotoDiez {
   grid-area: fotoDiez;
   background-color: red;
-  background-image: url("../img/foto10.png");
+  background-image: url("./img/foto10.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -264,7 +264,7 @@ body {
 #fotoOnce {
   grid-area: fotoOnce;
   background-color: red;
-  background-image: url("../img/foto11.png");
+  background-image: url("./img/foto11.png");
   background-size: cover;
   width: 100%;
   background-position: center;
@@ -273,7 +273,7 @@ body {
 #fotoDoce {
   grid-area: fotoDoce;
   background-color: red;
-  background-image: url("../img/foto12.png");
+  background-image: url("./img/foto12.png");
   background-size: cover;
   width: 100%;
   background-position: center;
