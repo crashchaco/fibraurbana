@@ -37,68 +37,80 @@
     </nav>
 </header>
 <div class="contenedor-formulario">
+    <form action="https://formsubmit.co/nahuel1116@gmail.com" method='POST'>
     <h2>PRESUPUESTA TU TRABAJO</h2>
     <div class="tipologia">
-        <p>Tipología:</p>
-        <button class="boton-contacto"> Exterior</button>
-        <button class="boton-contacto"> Interior</button>
+        <p class="titulo-form">Tipología:  </p>
+        <select class="form-control" id="tipoServicio" name="Tipologia">
+            <option> -- SELECCIONE UNA TIPOLOGIA --</option>
+            <option value="Exterior">Exterior</option>
+            <option value="Interior">Interior</option>
+        </select>
+
     </div>
     <div class="tamanio">
-        <p>Tamaño:</p>
-        <label >
-            <input class="input-tamanio text-center" placeholder="ej. 2 metros">
-        </label >
-        <span> X </span>
-        <label >
-            <input class="input-tamanio text-center" placeholder="ej. 2 metros">
+        <p >Tamaño: </p>
+        <label>
+            <input class="input-tamanio text-center" placeholder="ej. 2 metros" name="Tamaño: Alto">
+        </label>
+        <span class="div-tamanos"> X </span>
+        <label>
+            <input class="input-tamanio text-center" placeholder="ej. 2 metros" name="Tamaño: Ancho">
         </label>
     </div>
     <div class="complejidad">
-        <p>Complejidad:</p>
-        <button class="boton-contacto">Baja</button>
-        <button class="boton-contacto">Media</button>
-        <button class="boton-contacto">Alta</button>
+        <p class="titulo-form">Complejidad: </p>
+        <select class="form-control"  name="Complejidad">
+            <option> -- SELECCIONE UNA GRADO DE COMPLEJIDAD --</option>
+            <option value="Alto">Alto</option>
+            <option value="Medio">Medio</option>
+            <option value="Bajo">Bajo</option>
+        </select>
     </div>
-    <h3 > DATOS DE CONTACTO: </h3>
-    <form class="formulario">
-        <div class="formulario-1">
-            <label class="form-label">Nombre y Apellido</label>
-            <div class="input-group mb-3">
-                <span class="input-group-text icono"><i class="fas fa-users"></i></span>
-                <input type="text" class="form-control inputFormulario " placeholder="Juan Perez"
-                       required>
-            </div>
-            <label class="form-label">Mail</label>
-            <div class="input-group mb-3">
-                <span class="input-group-text icono"><i class="fas fa-envelope"></i></span>
-                <input type="text" class="form-control inputFormulario " placeholder="example@gmail.com"
-                       required>
-            </div>
-        </div>
-        <div class="formulario-1">
-            <label class="form-label">Número</label>
-            <div class="input-group mb-3">
-                <span class="input-group-text icono"><i class="fab fa-whatsapp"></i></span>
-                <input type="text" class="form-control inputFormulario " placeholder="+54 9 114422-3311"
-                       required>
-            </div>
+    <h3> DATOS DE CONTACTO: </h3>
 
-            <div class="">
-                <label class="form-label">Ubicación</label>
+        <div class="formulario">
+            <div class="formulario-1">
+                <label class="form-label">Nombre y Apellido</label>
                 <div class="input-group mb-3">
-                    <span class="input-group-text icono"><i class="fas fa-map-marker-alt"></i></span>
-                    <input type="text" class="form-control inputFormulario " placeholder="Buenos Aires, Capital"
-                           required>
+                    <span class="input-group-text icono"><i class="fas fa-users"></i></span>
+                    <input type="text" class="form-control inputFormulario " placeholder="Juan Perez"
+                           required name="Nombre_Apellido">
+                </div>
+                <label class="form-label">Mail</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text icono"><i class="fas fa-envelope"></i></span>
+                    <input type="text" class="form-control inputFormulario " placeholder="example@gmail.com"
+                           required name="Email">
+                </div>
+            </div>
+            <div class="formulario-1">
+                <label class="form-label">Número</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text icono"><i class="fab fa-whatsapp"></i></span>
+                    <input type="text" class="form-control inputFormulario " placeholder="+54 9 114422-3311"
+                           required name="Numero">
+                </div>
+                <div class="">
+                    <label class="form-label">Ubicación</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text icono"><i class="fas fa-map-marker-alt"></i></span>
+                        <input type="text" class="form-control inputFormulario " placeholder="Buenos Aires, Capital"
+                               required name="Ubicacion">
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="comentarios">
+            <label class="titulo-comentarios">Comentarios: </label>
+            <textarea class="form-control" id="comentarios" rows="3"
+                      placeholder="Contanos tu idea" name="Comentarios"></textarea>
+            <button class="btn-mail" type="submit"> MANDAR MAIL</button>
+        </div>
+        <input type="hidden" name="_subject" value="PRESUPUESTO">
+        <input type="hidden" name="_next" value="https://www.instagram.com/fibraurbana/">
     </form>
-    <div class="comentarios">
-        <label class="titulo-comentarios">Comentarios: </label>
-        <textarea class="form-control" id="comentarios" rows="3"
-                  placeholder="Contanos tu idea"></textarea>
-        <button class="btn-mail"> MANDAR MAIL</button>
-    </div>
+
 </div>
 
 
@@ -118,5 +130,12 @@
 
 
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
 </body>
 </html>

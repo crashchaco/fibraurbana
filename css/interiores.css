@@ -40,11 +40,11 @@ body {
 #contenedorPadre {
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 1fr 200px 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "item1 item2"
                         "item3 item3"
-                        "item4 item4"
+
 }
 
 #footer {
@@ -120,7 +120,7 @@ body {
 
 .img-item2 {
     width: 100%;
-    height: 100%;
+    height: 570px;
 }
 
 #item2 {
@@ -133,11 +133,18 @@ body {
     background-color: #3D3D3D1A;
     width: 100%;
     color: black;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+.imagenes-galeria-interiores{
+    width: 97%;
+    height: 97%;
 }
 
 .titulo3 {
@@ -310,7 +317,7 @@ input:nth-of-type(5):checked ~ #carousel {
     #contenedorPadre {
         background-color: rgb(255, 255, 255);
         display: grid;
-        grid-template-rows: auto 1fr 200px 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "item1 item1"
@@ -320,7 +327,7 @@ input:nth-of-type(5):checked ~ #carousel {
     }
 
     #item1 {
-        margin: 5rem 5rem 2rem 5rem;
+        margin: 5rem 5rem 2rem 2rem;
     }
 
 
